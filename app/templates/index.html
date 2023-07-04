@@ -1,0 +1,28 @@
+{% extends "_base.html" %}
+{% block content %}
+<div class="row">
+  <div class="col-md-7">
+    <h2>请上传要查询的图像</h2>
+    <button>上传图像</button>
+    <p><img id="uploaded-image"></p>
+    <br>
+  </div>
+  <div class="col-md-3 col-md-offset-1">
+    <h2>查询结果</h2>
+    <br>
+    <p id="searching">Searching...</p>
+    <p id="error">没有查询到相关图像!</p>
+    <table class="table" id="results-table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="results">
+      </tbody>
+    </table>
+  </div>
+</div>
+<br>
+{% endblock %}
